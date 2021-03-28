@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    background: #F9F6F1;
+}
+.conteiner{
+    width: 1116px;
+    margin: 0 auto;
+}
+.header-content, .card-content, .present-content{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: #F9F6F1;
+    padding-top: 73px;
+}
+.header-link:not(:last-child){
+    margin-right: 50px;
+}
+.header-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-decoration: none;
+}
+.header-content-burger{
+    display: none;
+}
+.header-content{
+    padding-bottom: 30px;
+}
+.left h2{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    margin-bottom: 46px;
+}
+.left h1{
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 0.04em;
+    margin-bottom: 25px;
+}
+.left p{
+    width: 514px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    margin-bottom: 43px;
+}
+.batya{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #D7B399;
+    padding: 17px 30px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.right h2{
+    text-decoration: line-through;
+    text-align: right;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.right h1{
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #D84033;
+}
+.delivery{
+    background-color: #212121;
+    text-align: center;
+    padding: 80px 0 69px 0;
+    color: white;
+}
+.delivery h1{
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+}
+.delivery span{
+    font-weight: normal;
+}
+.delivery p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 23px; 
+}
+.present{
+    padding: 72px 0;
+}
+@media(max-width:1116px){
+    .conteiner{
+        width: 768px;
+    }
+}
+@media(max-width:768px){
+    header{
+   
+        position: fixed ;
+        width: 100%;
+    }
+    .header-content-burger{
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: #F9F6F1;
+
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        background-color: #F9F6F1;
+        top:-100%;
+        transition: top linear 0.9s;
+
+    }
+    .header-content{
+        display: none;
+    }
+    .menu_btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+    .menu_btn > span, .menu_btn > span::before, .menu_btn > span::after{
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+    }
+    .menu_btn > span::before{
+        content: '';
+        top: -8px;
+    }
+    .menu_btn > span::after{
+        content: '';
+        top: 8px; 
+    }
+    .header-link{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 26px 0;
+        transition: background linear 0.45s;
+ 
+       /* transition-duration: 0.5s;  Скорость анимации */
+       /* transition-timing-function: linear;*/
+      /* Ease - Функция по умолчанию, переход начинается медленно, разгоняется быстро и замедляется в конце.
+Linear - Переход происходит равномерно на протяжении всего времени, без колебаний в скорости.
+Ease-in - Переход начинается медленно, а затем плавно ускоряется в конце.
+Ease-out – Переход начинается быстро и плавно замедляется в конце.
+Ease-in-out - Переход медленно начинается и медленно заканчивается.
+Cubic-bezier(x1, y1, x2, y2) - Позволяет вручную установить значения от 0 до 1 для кривой ускорения. Здесь нужны некоторые пояснения. С помощью точек x1, y1, x2 и y2 мы можем задавать различное время для начала, середины и конца анимации. При чем если задать отрицательное время, то может получиться очень интересный эффект.*/
+}
+    .header-link:hover{
+        background: burlywood;
+    }
+    #menu_toggle:checked~.menu{
+        top:73px;
+    }
+    #menu_toggle{
+        display: none;
+    }
+    section {
+        padding-top: 73px;
+    }
+}
