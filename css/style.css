@@ -107,6 +107,12 @@ header{
 .present{
     padding: 72px 0;
 }
+.present-content h1{
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
 @media(max-width:1116px){
     .conteiner{
         width: 768px;
