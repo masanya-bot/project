@@ -112,6 +112,75 @@ header{
     line-height: 37px;
     text-align: center;
     letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.present-content input{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 13px 20px;
+    width: 255px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    outline: none;
+    margin-right: 41px;
+}
+.present-content button{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    background-color:#D7B399;
+    width: 185px;
+    outline: none;
+    border: none;
+}
+footer{
+    background-color: #212121;
+    padding: 80px 0;
+}
+.footer-content{
+    display: flex;
+    justify-content: flex-end;
+}
+.link-block{
+    display: flex;
+    flex-direction: column;
+}
+.link-block:not(:last-child){
+    margin-right: 84px;
+}
+.link-block h3{
+    color: white;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.link-block a{
+    text-decoration: none;
+    color:#CBCFD4;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+#vk{
+    background-image: url(../img/vk.png);
+}
+#face{
+    background-image: url(../img/face.png);
+}
+#inst{
+    background-image: url(../img/inst.png);
+}
+#vk, #face, #inst {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 29px;
 }
 @media(max-width:1116px){
     .conteiner{
